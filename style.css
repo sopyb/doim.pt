@@ -1,14 +1,59 @@
 :root {
   --gradient: linear-gradient(
-    45deg,
-    #FF0000,
-    #00FF00,
-    #0000FF);
+    90deg,
+    #da5555,
+    #d99754,
+    #d9d954,
+    #97d954,
+    #54d954,
+    #54d997,
+    #54d9d9,
+    #5454d9,
+    #9754d9,
+    #d954d9,
+    #d95497,
+    #da5555
+  );
 }
 
 body {
   margin: 0;
   background-image: var(--gradient);
+  background-size: 1600%;
   height:100vh;
-  width:100vh;
+  width:100vw;
+  
+  animation: fade 60s infinite linear alternate-reverse;
+}
+
+@keyframes fade {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.center {
+  width: 75%;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 5%;
+  
+  mix-blend-mode: screen;
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
 }
