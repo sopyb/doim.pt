@@ -1,0 +1,14 @@
+:root {
+  --gradient: linear-gradient(
+    45deg,
+    #FF0000,
+    #00FF00,
+    #0000FF);
+}
+
+body {
+  margin: 0;
+  background-image: var(--gradient);
+  height:100vh;
+  width:100vh;
+}
