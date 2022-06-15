@@ -17,6 +17,9 @@
 }
 
 body {
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 1px;
+  
   margin: 0;
   background-image: var(--gradient);
   background-size: 1600% 100%;
