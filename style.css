@@ -50,6 +50,11 @@ body {
   text-align: center;
 }
 
+.center *::selection {
+  background-color: black;
+  color:white;
+}
+
 h1 {
   font-size: 3em;
 }
