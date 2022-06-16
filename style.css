@@ -40,6 +40,21 @@ p {
   font-weight: bolder;
 }
 
+ul li {
+  position: relative;
+}
+
+ul li:before {
+  content: "";
+  position:absolute;
+  left: -1em;
+  top: 0.1em;
+  display:inline-block;
+  width:0.8em;
+  height: 0.8em;
+  border-radius: 100%;
+}
+
 .center {
   width: 75%;
   position: absolute;
@@ -58,12 +73,12 @@ p {
   padding: 10% 5%;
 }
 
-.fade {
+.fade, ul li:before {
   background-image: var(--gradient);
   background-size: 1600% 100%;
   background-repeat: repeat-x;
   
-  animation: fade 60s infinite linear reverse;
+  animation: fade 90s infinite linear reverse;
 }
 
 @keyframes fade {
